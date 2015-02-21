@@ -12,7 +12,7 @@
 (require 'ensure-packages)
 
 (setq ensure-packages
-      '(smex paredit zenburn-theme))
+      '(smex paredit zenburn-theme puppet-mode puppetfile-mode))
 
 (ensure-packages-install-missing)
 
