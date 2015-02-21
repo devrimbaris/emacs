@@ -12,11 +12,23 @@
 (require 'ensure-packages)
 
 (setq ensure-packages
-      '(smex paredit))
+      '(smex paredit zenburn-theme))
 
 (ensure-packages-install-missing)
 
-;(load-theme 'bubbleberry)
+
+(require 'ido)
+(setq ido-enable-flex-matching t)
+(ido-mode 1)
+
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+
+(setq make-backup-files nil)
+(setq inhibit-startup-message t)
+
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -32,3 +44,21 @@
 (help-at-pt-set-timer)
 
 (load-theme 'deeper-blue)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (zenburn)))
+ '(custom-safe-themes
+   (quote
+    ("cbef37d6304f12fb789f5d80c2b75ea01465e41073c30341dc84c6c0d1eb611d" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+
+
+
