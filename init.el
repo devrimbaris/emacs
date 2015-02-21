@@ -27,10 +27,6 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 
-(cond
- ((eq 1050 screen-height) (set-face-attribute 'default nil :height 100))
- (true (set-face-attribute 'default nil :height 130)))
-
 (setq help-at-pt-display-when-idle t)
 (setq help-at-pt-timer-delay 0.1)
 (help-at-pt-set-timer)
