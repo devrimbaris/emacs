@@ -10,7 +10,7 @@
 (require 'ensure-packages)
 
 (setq ensure-packages
-      '(smex paredit zenburn-theme puppet-mode puppetfile-mode))
+      '(smex paredit puppet-mode puppetfile-mode))
 
 (ensure-packages-install-missing)
 
@@ -41,7 +41,7 @@
 
 (load-theme 'deeper-blue)
 (custom-set-variables
- '(custom-enabled-themes (quote (zenburn)))
+
  '(custom-safe-themes
    (quote
     ("cbef37d6304f12fb789f5d80c2b75ea01465e41073c30341dc84c6c0d1eb611d" default))))
