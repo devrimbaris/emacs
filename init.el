@@ -31,7 +31,6 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (line-number-mode t)
-(setq-default cursor-type 'bar)
 (global-linum-mode)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
