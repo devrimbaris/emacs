@@ -1,6 +1,4 @@
-;; my emacs config
-
-(setq inhibit-startup-screen t)
+;;Emacs configuration file
 
 (setq init-home-dir (file-name-directory user-init-file))
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -27,7 +25,7 @@
 
 (setq make-backup-files nil)
 (setq inhibit-startup-message t)
-
+(setq inhibit-startup-screen t)
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)
